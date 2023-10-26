@@ -1,9 +1,21 @@
-Lists:
+DOCUMENTATION OF LISTS (20 OCT 2023)
+- POSITIVE SLICING()
+- NEGATIVE SLICING()
+- EMPTY LIST()
+- N LIST()
+- RANGE()
+- METHODS
+- APPEND()
+- insert()
+- pop()
+
+1.)Lists:
 
 ##> A list is a heterogenous sequential mutable data type. 
 ##> A list are used to store multiple items in a single variable and it allows duplicate values. 
 ##> lists are defined with []
 
+>example
 
 ```python
 thislist=['apple', 'banana', 'cherry']
@@ -13,7 +25,7 @@ print(thislist)
     ['apple', 'banana', 'cherry']
     
 
-Positive slicing:
+2.)Positive slicing:
 
 syntax:
 string [start :end :step]
@@ -22,6 +34,7 @@ start : it starts with 0.
 end : n+1(length of datatype)
 step(default): +1
 
+>example
 
 ```python
 thislist=['apple', 'banana', 'cherry']
@@ -31,19 +44,20 @@ print(thislist, type(thislist), len(thislist))
     ['apple', 'banana', 'cherry'] <class 'list'> 3
     
 
-negative slicing:
+3.)negative slicing:
 
 start: -1
 end: -(n+1)
 step: -1
 
-Empty list:
+4.)Empty list:
     an empty list can be achieved in two ways i.e. either by using square brackets[] or using the list() constructor.
     lists are mutable.
     the list where we dont have any elements.
 
     
 
+>example
 
 ```python
 z=[]
@@ -53,9 +67,10 @@ print(z, type(z), len(z))
     [] <class 'list'> 0
     
 
-n list:
+5.)n list:
     
 
+>example
 
 ```python
 l=list()
@@ -118,9 +133,10 @@ print(num[2])
     [3, 4, [5, 6]]
     
 
-Range():
+6.)Range():
 The range() function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and stops before a specified number.
 
+>example
 
 ```python
 r=range(1,11)
@@ -133,13 +149,14 @@ print(r, type(r), len(r), hex(id(r)), sep='\n')
     0x231deecf750
     
 
-Methods:
+7.)Methods:
 
 Methods are functions that are associated with an object or a class in Python programming. They are used to perform specific tasks or operations on the data stored within objects or classes.
 
 
 
 
+>example
 
 ```python
 dir(l)
@@ -199,12 +216,13 @@ dir(l)
 
 
 
-Append:
+8.)Append:
 The append() method appends an element to the end of the list.
 
 Syntax:
 list.append(elmnt)
 
+>example
 
 ```python
 a = ["apple", "banana", "cherry"]
@@ -238,13 +256,14 @@ print(fruits)
     ['apple', 'banana', 'cherry', 1, 4, 5, 9]
     
 
-Insert():
+9.)Insert():
 
 The insert() method inserts the specified value at the specified position.
 
 Syntax:
 list.insert(pos, elmnt)
 
+>example
 
 ```python
 Remove():
@@ -265,12 +284,13 @@ print(fruits)
     ['apple', 'cherry']
     
 
-pop():
+10.)pop():
     The pop() method removes the element at the specified position.
 
 syntax:
     list.pop(pos)
 
+>example
 
 ```python
 fruits = ['apple', 'banana', 'cherry']
